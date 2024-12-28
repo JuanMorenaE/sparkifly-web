@@ -1,0 +1,63 @@
+.spark-animation-left {
+    animation: spark 2s alternate infinite ease-in-out;
+}
+
+.spark-animation-right {
+    animation: spark 2s alternate-reverse infinite ease-in-out;
+}
+
+.popUp-animation {
+    animation: popUp .5s forwards;
+}
+
+.popUp-animation-reverse {
+    animation: popUp-reverse .5s forwards;
+}
+
+.fadeOut {
+    animation: fadeOut .5s forwards;
+}
+
+@keyframes spark {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: translateY(-0.5em) rotate(0deg);
+        opacity: 0.5;
+        scale: 0.8;
+    }
+
+}
+
+@keyframes popUp {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes popUp-reverse {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
